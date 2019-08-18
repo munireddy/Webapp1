@@ -15,6 +15,7 @@ steps:
   - script: dir /od && dir
   - pwsh: |
        $passwd = ConvertTo-SecureString "Verizon@1" -AsPlainText -Force
+       Connect-AzAccount -ServicePrincipal -Credential $pscredential -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
        #$Creds = Get-Credential
        Write-Output $passwd
        Write-Output "End of the program"

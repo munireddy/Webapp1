@@ -11,13 +11,13 @@ pool:
 steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
-  - script: echo "Verizo@1" >> cred.txt
+  - script: echo "Verizo@1" >> c:\cred.txt
   - script: dir /od && dir
   
   - pwsh: |
         Write-Output "test output"
         $userId = "munisekhar.reddy@gmail.com"
-        $password = get-content -Path "cred.txt" | ConvertTo-SecureString
+        $password = get-content -Path "c:\cred.txt" | ConvertTo-SecureString
  
         #Set the powershell credential object
         $cred = New-Object -TypeName System.Management.Automation.PSCredential($userId ,$password)

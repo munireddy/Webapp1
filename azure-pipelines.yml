@@ -16,16 +16,20 @@ steps:
   
   - pwsh: |
         Write-Output "test output"
-        $userId = "munisekhar.reddy@gmail.com"
-        $password = get-content -Path "c:\cred.txt"
-        Write-Output  $password
-        Install-Module AzureRM
-        $password = get-content -Path "c:\cred.txt" | ConvertTo-SecureString -asPlainText -Force
+        #$userId = "munisekhar.reddy@gmail.com"
+        #$password = get-content -Path "c:\cred.txt"
+        #Write-Output  $password
+        #Install-Module AzureRM
+        #$password = get-content -Path "c:\cred.txt" | ConvertTo-SecureString -asPlainText -Force
         #Set the powershell credential object
-        $cred = New-Object -TypeName System.Management.Automation.PSCredential($userId ,$password)
+        #$cred = New-Object -TypeName System.Management.Automation.PSCredential($userId ,$password)
  
+        $passwd = ConvertTo-SecureString "Verizon@1" -AsPlainText -Force
+        $pscredential = New-Object System.Management.Automation.PSCredential('service principal name/id', $passwd)
+        Connect-AzAccount -ServicePrincipal -Credential $pscredential -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
+        az resource list
         #log On To Azure Account
-        Login-AzureRmAccount -Credential $cred -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
+        #Login-AzureRmAccount -Credential $cred -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
         
   #  $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
   #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"

@@ -15,8 +15,9 @@ steps:
   - script: |
         dir /od 
         dir
-        az ad sp list --show-mine --query '[].{"id":"appId", "tenant":"appOwnerTenantId"}'
-        az login --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
+        az account list-locations
+        #az ad sp list --show-mine --query '[].{"id":"appId", "tenant":"appOwnerTenantId"}'
+        #az login --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
         #az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
         az resource list
         

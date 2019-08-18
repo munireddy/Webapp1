@@ -17,8 +17,9 @@ steps:
   - pwsh: |
         Write-Output "test output"
         $userId = "munisekhar.reddy@gmail.com"
+        $password = get-content -Path "c:\cred.txt"
+        Write-Output  $password
         $password = get-content -Path "c:\cred.txt" | ConvertTo-SecureString
- 
         #Set the powershell credential object
         $cred = New-Object -TypeName System.Management.Automation.PSCredential($userId ,$password)
  

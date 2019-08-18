@@ -11,7 +11,7 @@ pool:
 steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
-  - script: dir /od
+  - script: dir /od && dir
   - script: $AzCred = Get-Credential -UserName "munisekahr.reddy@gmail.com" && az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
   - script: az resource list
 

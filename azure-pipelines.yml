@@ -12,9 +12,9 @@ steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
   - script: dir /od && dir
-  - pwsh: |
-    $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
-    #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"
+  #- pwsh: |
+  #  $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
+  #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"
   #- script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
   #- script: az resource list
 

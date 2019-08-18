@@ -13,7 +13,15 @@ steps:
   - script: md sampledir
   - script: echo "Verizo@1" >> c:\cred.txt
   - script: dir /od && dir
+ # - pwsh: |
+ #       $User = "munisekhar.reddy@gmail.com"
+ #       $PWord = ConvertTo-SecureString -String "Verizon@1" -AsPlainText -Force
+ #       $tenant = ""
+ #       $subscription = "<subscription id>"
+ #       $Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User,$PWord
+ #       Connect-AzAccount -Credential $Credential -Tenant $tenant -Subscription $subscription
   - pwsh: |
+       Import-Module AzureRM
        $passwd = ConvertTo-SecureString "Verizon@1" -AsPlainText -Force
        Connect-AzRmAccount -ServicePrincipal -Credential $pscredential -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
        #$Creds = Get-Credential

@@ -14,9 +14,7 @@ steps:
   - script: dir /od && dir
   - pwsh: |
     $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
-    az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
-    az resource list
-  #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"
+    #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"
   #- script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
   #- script: az resource list
 

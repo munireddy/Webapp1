@@ -31,7 +31,7 @@ steps:
         #log On To Azure Account
         #Login-AzureRmAccount -Credential $cred -TenantId "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
         
-  #  $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
+  #  $AzCred = Get-Creden tial -UserName "munisekhar.reddy@gmail.com"
   #- script: Set-Variabl e -Name "AzCred" -Value "Verizon@1"
   #- script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
   #- script: az resource list

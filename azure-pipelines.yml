@@ -15,7 +15,8 @@ steps:
   - script: |
         dir /od 
         dir
-        az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
+        az login --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
+        #az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
         az resource list
         
  # - pwsh: |

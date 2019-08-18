@@ -12,4 +12,5 @@ steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
   - script: dir /od
+  - script: az resource list
 

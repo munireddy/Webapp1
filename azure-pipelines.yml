@@ -12,5 +12,6 @@ steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
   - script: dir /od
+  - script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
   - script: az resource list
 

@@ -12,6 +12,7 @@ steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
   - script: dir /od && dir
-  - script: $AzCred = Get-Credential -UserName "munisekahr.reddy@gmail.com" && az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
+  - script: $AzCred = Get-Credential -UserName "munisekahr.reddy@gmail.com" 
+  - script: az login -u $AzCred.UserName -p "Verizon@1"
   - script: az resource list
 

@@ -19,6 +19,7 @@ steps:
         $userId = "munisekhar.reddy@gmail.com"
         $password = get-content -Path "c:\cred.txt"
         Write-Output  $password
+        Install-Module AzureRM
         $password = get-content -Path "c:\cred.txt" | ConvertTo-SecureString -asPlainText -Force
         #Set the powershell credential object
         $cred = New-Object -TypeName System.Management.Automation.PSCredential($userId ,$password)

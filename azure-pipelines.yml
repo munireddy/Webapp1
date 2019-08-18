@@ -9,5 +9,5 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 steps:
-  - script: echo hello from Windows
+  - script: echo hello from Windows with a change in the line
 

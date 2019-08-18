@@ -12,7 +12,11 @@ steps:
   - script: echo hello from Windows with a change in the line
   - script: md sampledir
   - script: dir /od && dir
+  - pwsh: |
+    $AzCred = Get-Credential -UserName "munisekhar.reddy@gmail.com"
+    az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
+    az resource list
   #- script: Set-Variable -Name "AzCred" -Value "Verizon@1"
-  - script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
-  - script: az resource list
+  #- script: az login -u munisekhar.reddy@gmail.com -p Verizon@1
+  #- script: az resource list
 

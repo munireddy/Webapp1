@@ -15,8 +15,9 @@ steps:
   - script: |
         dir /od 
         dir
-        az resource list
         az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
+        az resource list
+        
  # - pwsh: |
  #       $User = "munisekhar.reddy@gmail.com"
  #       $PWord = ConvertTo-SecureString -String "Verizon@1" -AsPlainText -Force

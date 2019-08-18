@@ -13,7 +13,9 @@ steps:
   - script: md sampledir
   - script: echo "Verizo@1" >> c:\cred.txt
   - script: dir /od && dir
-  - script: az group create --name myResourceGroup --location eastus
+  - script: |
+         az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
+         az group create --name myResourceGroup --location eastus
        
  #OLD CODE 
  # - pwsh: |

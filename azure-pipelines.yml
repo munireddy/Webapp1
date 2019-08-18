@@ -17,7 +17,7 @@ steps:
        $passwd = ConvertTo-SecureString "Verizon@1" -AsPlainText -Force
        #$Creds = Get-Credential
        Write-Output $passwd
-       Write-Output $Creds
+       Write-Output "End of the program"
        
   #- script: |
   #       az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"

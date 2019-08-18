@@ -13,9 +13,14 @@ steps:
   - script: md sampledir
   - script: echo "Verizo@1" >> c:\cred.txt
   - script: dir /od && dir
-  - script: |
-         az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
-         az group create --name myResourceGroup --location eastus
+  - pwsh: |
+       $Creds = Get-Credential
+       Write-Output "test output"
+       Write-Output $Creds
+       
+  #- script: |
+  #       az login -u "munisekhar.reddy@gmail.com" -p "Verizon@1"
+  #       az group create --name myResourceGroup --location eastus
        
  #OLD CODE 
  # - pwsh: |

@@ -21,7 +21,7 @@ RUN pip install robotframework
 RUN pip install robotframework-sshlibrary
 RUN pip install robotframework-selenium2library
 RUN pip install Flask-SqlAlchemy
-EXPOSE 4000
+EXPOSE 8000
 
 WORKDIR  /home
 

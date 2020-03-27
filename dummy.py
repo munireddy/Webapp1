@@ -14,6 +14,9 @@ session.add(user)
  
 user = User("python","python")
 session.add(user)
+
+user = User("userid","password")
+session.add(user)
  
 user = User("jumpiness","python")
 session.add(user)

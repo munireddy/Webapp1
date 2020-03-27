@@ -1,0 +1,12 @@
+ls -ltr
+sudo docker ps | grep  munireddy1/sampledockerimage01 | cut -d " " -f1
+if [ $? -eq 0 ]; then
+    sudo docker stop $(sudo docker ps | grep  munireddy1/sampledockerimage01 | cut -d " " -f1)
+else
+    echo "No Docker container is running"
+fi    
+#Build Image
+sudo docker build . -t munireddy1/sampledockerimage01
+sudo docker images
+#Run image
+sudo docker run -p 8000:8000 munireddy1/sampledockerimage01 &

@@ -11,7 +11,7 @@ session = Session()
  
 user = User("admin","password")
 session.add(user)
- 
+#Added a comment 
 user = User("python","python")
 session.add(user)
 

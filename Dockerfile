@@ -39,6 +39,7 @@ RUN /usr/bin/python  dummy.py
  
 ADD index.html /home/templates
 ADD login1.html /home/templates
+ADD index.html /home/templates
 
 RUN mkdir -pv /home/static/
 ADD style.css /home/static

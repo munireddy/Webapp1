@@ -7,6 +7,7 @@ class  MyPrg1{
      System.out.println("12 New change added to the Java program");
      System.out.println("Change added to trigger a SCM polled job");
      System.out.println("Change added to trigger jenkins job 03224");
+     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! New Line 0520  !!!!!!!!!!!!!!!!!!!!!!!!1");
  }
 }
 // Comment added to the program to trigger Jenkins job

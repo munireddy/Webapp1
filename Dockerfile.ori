@@ -47,3 +47,4 @@ ADD style.css /home/static
 #ENTRYPOINT ["/usr/bin/python", "app4.py"]
 ENTRYPOINT ["nohup", "/usr/bin/python","/home/app4.py", "&"]
 #Added comment to checkin the file.
+#Added new comment

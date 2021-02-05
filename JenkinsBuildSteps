@@ -17,6 +17,7 @@ ls -ltr
 echo ${BUILD_NUMBER}
 sudo docker ps | grep  munireddy1/sampledockerimage01 | cut -d " " -f1
 #sudo docker ps | grep  munireddy1/sampledockerimage01 | cut -d " " -f1
+# this is a comment
 #if [ $? -eq 0 ]; then
 if [ -z $(sudo docker ps | grep  munireddy1/sampledockerimage01 | cut -d " " -f1)]; then
     echo "No Docker container is running"

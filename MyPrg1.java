@@ -1,6 +1,6 @@
 class  MyPrg1{
  public static void main(String args[]){
-     int a = 100;
+     int a = 1000;
      System.out.println("Bulid triiger on 02/04 Second attempt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
      System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Hello World from a git Hub 0........ 1201 Jenkins Trigger");
      System.out.println("Hello World from a git Hub 1........ 0322 Jenkins Trigger");

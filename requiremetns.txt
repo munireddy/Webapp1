@@ -1,0 +1,7 @@
+#
+#
+# Sample requirements file
+#
+#
+#
+requests
